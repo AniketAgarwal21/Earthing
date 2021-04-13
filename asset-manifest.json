@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Earthing/static/css/main.93db8750.chunk.css",
+    "main.js": "/Earthing/static/js/main.e34787bd.chunk.js",
+    "main.js.map": "/Earthing/static/js/main.e34787bd.chunk.js.map",
+    "runtime-main.js": "/Earthing/static/js/runtime-main.51836f9a.js",
+    "runtime-main.js.map": "/Earthing/static/js/runtime-main.51836f9a.js.map",
+    "static/js/2.caa19f49.chunk.js": "/Earthing/static/js/2.caa19f49.chunk.js",
+    "static/js/2.caa19f49.chunk.js.map": "/Earthing/static/js/2.caa19f49.chunk.js.map",
+    "index.html": "/Earthing/index.html",
+    "static/css/main.93db8750.chunk.css.map": "/Earthing/static/css/main.93db8750.chunk.css.map",
+    "static/js/2.caa19f49.chunk.js.LICENSE.txt": "/Earthing/static/js/2.caa19f49.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.51836f9a.js",
+    "static/js/2.caa19f49.chunk.js",
+    "static/css/main.93db8750.chunk.css",
+    "static/js/main.e34787bd.chunk.js"
+  ]
+}
