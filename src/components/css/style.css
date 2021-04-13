@@ -1,8 +1,7 @@
 
 input {
   display: block;
-  margin: 20px auto;
-  padding: 0 30px;
+  padding: 0 20px;
   font-size: 18px;
   width: 60%;
   max-width: 300px;
@@ -24,6 +23,18 @@ button {
   overflow: hidden;
   border-radius: 0.25em;
   box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.close-btn {
+  display: block;
+  width: 50px;
+  cursor: pointer;
 }
 
 .result {

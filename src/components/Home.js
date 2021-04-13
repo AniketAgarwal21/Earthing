@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import closeBtn from './img/closeBtn.png'
 import './css/style.css'
 
 function Home() {
@@ -42,12 +43,16 @@ function Home() {
 
     return (
         <section>
-            <input
-                type="text"
-                placeholder="Search For A Country"
-                value={input}
-                onChange={inputChange}
-            />
+            <div className="container">
+                <input
+                    type="text"
+                    placeholder="Search For A Country"
+                    value={input}
+                    onChange={inputChange}
+                />
+                <img className="close-btn" src={closeBtn} onClick={() => setInput("")} alt="Clear Input" />
+            </div>
+
             {inputCountryList.map((country) => {
                 return <button onClick={getCountry} key={country.name}>{country.name}</button>
             })}
