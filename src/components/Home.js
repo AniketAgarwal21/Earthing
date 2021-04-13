@@ -8,6 +8,7 @@ function Home() {
     let [allCountryList, setAllCountryList] = useState([])
     let [inputCountryList, setInputCountryList] = useState([])
     let [input, setInput] = useState("")
+    let [error, setError] = useState("")
 
     useEffect(() => {
         fetch('https://restcountries.eu/rest/v2/all')
@@ -27,6 +28,13 @@ function Home() {
         const fileteredCountries = allCountryList.filter((country) => {
             return country.name.toLowerCase().includes(e.target.value.toLowerCase())
         })
+
+        if (fileteredCountries.length === 0) {
+            setError("No Country Found")
+            setInputCountryList([])
+            return
+        }
+        setError("")
         setInputCountryList(fileteredCountries)
     }
 
@@ -35,6 +43,7 @@ function Home() {
         const country = allCountryList.filter((country) => {
             return (country.name.toLowerCase() === e.target.innerText.toLowerCase())
         })
+        
         // console.log(country[0]);
         setSearchedCountry(country[0])
         setInputCountryList([])
@@ -53,6 +62,7 @@ function Home() {
                 <img className="close-btn" src={closeBtn} onClick={() => setInput("")} alt="Clear Input" />
             </div>
 
+            {error !== "" ? <button>{error}</button> : null}
             {inputCountryList.map((country) => {
                 return <button onClick={getCountry} key={country.name}>{country.name}</button>
             })}
